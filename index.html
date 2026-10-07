@@ -168,6 +168,90 @@
           &lt;ol&gt; is an ordered list (1, 2, 3...) where the steps are kept in sequence, one after another.</p>
       </details>
     </section>
+
+    <hr>
+
+    <!-- COURSE REGISTRATION FORM SECTION -->
+    <section id="registration">
+      <h2>Course Registration Form</h2>
+      <p>Fill out the form below to participate in the class review cohort:</p>
+
+      <form action="#" method="POST">
+        <fieldset>
+          <legend><strong>Student Registration Information</strong></legend>
+
+          <p>
+            <label for="fullname">Full Name *:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+          </p>
+
+          <p>
+            <label for="email">Email Address *:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone Number (11 Digits) *:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{11}"
+              required>
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth *:</label><br>
+            <input type="date" id="dob" name="dob" required>
+          </p>
+
+          <p>
+            <label for="skill-level">Current Skill Level *:</label><br>
+            <select id="skill-level" name="skill-level" required>
+              <option value="" disabled selected>-- Select Skill Level --</option>
+              <option value="beginner">Absolute Beginner (Just Starting)</option>
+              <option value="know-html">Know Basic HTML</option>
+              <option value="intermediate">Intermediate (Learning for Some Time)</option>
+            </select>
+          </p>
+
+          <p>
+            <strong>Gender *:</strong><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </p>
+
+          <p>
+            <strong>Topics You Are Interested in Learning (Multiple Select) *:</strong><br>
+            <input type="checkbox" id="topic-html" name="topics" value="html">
+            <label for="topic-html">HTML5 Semantic Structure</label><br>
+
+            <input type="checkbox" id="topic-css" name="topics" value="css">
+            <label for="topic-css">CSS Responsive Styling</label><br>
+
+            <input type="checkbox" id="topic-js" name="topics" value="javascript">
+            <label for="topic-js">JavaScript Fundamentals</label><br>
+
+            <input type="checkbox" id="topic-react" name="topics" value="react">
+            <label for="topic-react">React Framework</label>
+          </p>
+
+          <p>
+            <label for="motivation">Why did you join this course?:</label><br>
+            <textarea id="motivation" name="motivation" rows="4" cols="50"
+              placeholder="Write your purpose here..."></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+          </p>
+
+        </fieldset>
+      </form>
+    </section>
   </main>
 
 </body>
